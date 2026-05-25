@@ -5,3 +5,75 @@ body{
 strong{
     color: #22D4FD;
 }
+  /* --- ESTILOS DE LAYOUT (LADO A LADO) --- */
+        
+  main {
+    display: flex; /* Ativa o modo Flexbox */
+    align-items: center; /* Alinha o texto e a imagem verticalmente ao centro */
+    justify-content: space-between; /* Dá um espaço equilibrado entre o texto e a imagem */
+    max-width: 1200px; /* Limita a largura máxima para não espalhar demais em telas gigantes */
+    margin: 0 auto; /* Centraliza o site todo na tela */
+    padding: 40px; /* Espaçamento interno */
+    gap: 50px; /* Cria um espaço de 50px entre o bloco de texto e a imagem */
+}
+
+.caixa-texto {.container {
+    display: flex;
+    justify-content: center; /* Centraliza na horizontal */
+    align-items: center;    /* Centraliza na vertical */
+    height: 10vh;          /* Altura para o alinhamento vertical funcionar */
+}
+.seu-elemento {
+    text-align: center;
+  }
+    flex: 1; /* Faz o texto ocupar o espaço disponível proporcionalmente */
+}
+
+main img {
+    max-width: 100%; /* Garante que a imagem não mude de tamanho descontroladamente */
+    height: auto;
+    border-radius: 8px; /* Opcional: deixa as bordas da imagem levemente arredondadas */
+}
+
+/* --- ESTILOS DE TIPOGRAFIA (FONTES) --- */
+
+h1 {
+    font-family: Arial, sans-serif;
+    font-size: 40px; /* Tamanho do título bem maior */
+    color: #f0f2f8; /* Cor branca para o título (ajuste se seu fundo for claro) */
+    line-height: 1.2; /* Ajusta o espaçamento entre as linhas do título */
+    margin-bottom: 20px; /* Espaço entre o título e o parágrafo */
+}
+
+p {
+    font-family: Arial, sans-serif;
+    font-size: 18px; /* Tamanho do texto menor que o título */
+    color: #afb2bf; /* Cor cinza clara para o parágrafo dar contraste */
+    line-height: 1.6; /* Deixa a leitura do texto mais confortável */
+    margin-bottom: 30px; /* Espaço entre o parágrafo e os botões */
+}
+
+/* --- BOTÕES --- */
+.botao-social {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #3656d3;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-right: 15px; /* Espaço entre um botão e outro */
+}
+
+.botao-social:hover {
+    background-color: #118de0;
+}
+
+/* Fundo escuro apenas para dar contraste com os textos brancos (opcional) */
+body {
+    background-color: #121214; 
+    margin: 0;
+    overflow-x: hidden;
+}
